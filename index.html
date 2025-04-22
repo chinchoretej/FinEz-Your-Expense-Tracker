@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FinEz - Your Expense Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinEz – Your Expense Tracker</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      background: #f5f7fa;
+      color: #333;
       text-align: center;
     }
     header {
@@ -18,21 +19,53 @@
       padding: 2rem 1rem;
     }
     h1 {
+      font-size: 2.5rem;
       margin: 0;
     }
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
     .content {
-      margin: 2rem;
+      padding: 2rem 1rem;
+    }
+    .features {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .features h2 {
+      text-align: center;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      background: #fff;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background: #45a049;
     }
     footer {
       background: #333;
       color: white;
       padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    a {
-      color: #4CAF50;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -40,18 +73,25 @@
 
 <header>
   <h1>FinEz</h1>
-  <p>Your Simple, Smart Expense Tracker</p>
+  <p class="subtitle">Track Your Expenses. Control Your Budget. Build Financial Freedom.</p>
 </header>
 
 <div class="content">
-  <h2>Welcome!</h2>
-  <p>FinEz helps you manage your personal expenses with ease and clarity.</p>
-  <p><strong>Coming soon to Android!</strong></p>
-  <p>Want to know more? Follow the project on <a href="https://github.com/chinchoretej/FinEz-Your-Expense-Tracker" target="_blank">GitHub</a>.</p>
+  <h2>Why Choose FinEz?</h2>
+  <div class="features">
+    <ul>
+      <li><strong>Easy Expense Tracking:</strong> Add and view expenses instantly with a simple, clean interface.</li>
+      <li><strong>Monthly Budgeting:</strong> Set budgets and stay within limits – FinEz warns you before overspending.</li>
+      <li><strong>Category Insights:</strong> Know where your money goes – view charts by category and trends.</li>
+      <li><strong>Secure & Offline:</strong> Works without internet and keeps your data secure on your device.</li>
+    </ul>
+  </div>
+
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.tejpower.finez" target="_blank">📲 Download FinEz Now</a>
 </div>
 
 <footer>
-  &copy; 2025 FinEz by Tejas Chinchore
+  &copy; 2025 FinEz by Tejas Chinchore | Made in India 🇮🇳
 </footer>
 
 </body>
